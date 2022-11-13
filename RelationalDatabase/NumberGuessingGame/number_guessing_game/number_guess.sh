@@ -82,7 +82,7 @@ MAIN() {
       if [[ -z $USER_ID ]]
       then
         # insert user in the users table and get new user id
-        INSERT_USER_RESULT=$($PSQL "INSERT INTO users(username) VALUES('$USERNAME')" )
+        INSERT_USER_RESULT=$($PSQL "INSERT INTO users(username) VALUES(LOWER('$USERNAME'))" )
         USER_ID=$($PSQL "SELECT user_id FROM users WHERE username ILIKE '$USERNAME'" )
       fi
 
