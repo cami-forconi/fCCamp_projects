@@ -145,7 +145,7 @@ INSERT INTO public.games VALUES (6, 3, 8, 595);
 
 INSERT INTO public.users VALUES (1, 'cami-forconi');
 INSERT INTO public.users VALUES (2, 'forco');
-INSERT INTO public.users VALUES (3, 'cold_camille');
+INSERT INTO public.users VALUES (3, 'cold_camile');
 
 
 --
