@@ -38,7 +38,7 @@ MAIN() {
     fi
 
     # generate random number
-    SECRET_NUMBER=$(( RANDOM%1000 + 1 ))
+    SECRET_NUMBER=$(( 1 + RANDOM % 1000 ))
 
     # set count and guess variables
     COUNT=0
